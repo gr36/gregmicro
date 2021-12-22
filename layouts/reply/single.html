@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="content-area">
+    <main class="site-main">
+            <article class="{{post_class}} single">
+                <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI5KJI&placement=gregmorriscouk" id="_carbonads_js"></script>
+                <header class="post-header container large">
+                    <h1 class="p-name post-title">{{ .Title }</h1>
+                </header>
+                <div class="post-content kg-canvas u-text-format">
+                    <div>
+                        Replying to: <img src="{{ .Params.reply_to_avatar }}" width="22" height="22" style="width: 22px; height: 22px; vertical-align: top; border-radius: 11px;" alt="{{ .Params.reply_to_username }}" />
+                        {{ if eq .Params.reply_to_hostname "micro.blog" }}
+                            <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a>
+                        {{ else }}
+                            <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a>
+                        {{ end }}
+                      </div>
+                      <section class="e-content post-body">
+                    {{ .Content }}
+                    </section>
+                <span class="blog-post-meta">
+                    <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">Posted on {{ .Date.Format "3:04 PM, Jan 2" }</time>
+                
+                </span>
+                </div>
+            </article>
+    </main>
+</div>
+{{ end }}
