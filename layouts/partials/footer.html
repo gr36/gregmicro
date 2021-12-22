@@ -1,16 +1,12 @@
 <footer class="site-footer">
     <div class="container">
-        {{#if @site.secondary_navigation}}
             <nav class="footer-nav">
-                {{navigation type="secondary"}}
+                
             </nav>
-        {{/if}}
         <div class="copyright">
             <div class="mobile-social">
-                {{> social}}
+                {{ partial "social.html" . }}
             </div>
         </div>
     </div>
 </footer>
-
-{{> pswp}}
