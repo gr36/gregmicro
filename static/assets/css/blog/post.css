@@ -16,7 +16,7 @@
 }
 
 .back-to-blog a:hover { 
-    background-color: var(--ghost-accent-color);
+    background-color: var(--highlight);
     color: var(--darkmode-text-color);
 }
 
@@ -64,7 +64,7 @@
 }
 
 .post-tag a:hover {
-    background-color: var(--ghost-accent-color);
+    background-color: var(--highlight);
     color: var(--darkmode-text-color);
 }
 

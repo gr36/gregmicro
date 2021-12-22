@@ -82,7 +82,7 @@ blockquote {
     font-style:italic;
     font-size: 22px;
     font-weight: 500;
-    border-left:8px solid var(--ghost-accent-color);
+    border-left:8px solid var(--highlight);
     line-height:1.45;
     position: relative;
   }
@@ -94,7 +94,7 @@ blockquote {
   blockquote::before {
     font-family:Arial;
     content: "\201C";
-    color: var(--ghost-accent-color);
+    color: var(--highlight);
     font-size:4em;
     position: absolute;
     left: 5px;
