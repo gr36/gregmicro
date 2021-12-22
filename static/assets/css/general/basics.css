@@ -10,6 +10,7 @@
     --black-color: #000;
     --font-base: rubik, sans-serif;
     --animation-base: ease-in-out;
+    --highlight: #FF1a75;
 }
 
 html {
