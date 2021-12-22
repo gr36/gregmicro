@@ -1,0 +1,13 @@
+.comments-container {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+    max-width: 800px;
+}
+
+.comment-total {
+    color: var(--ghost-accent-color);
+}

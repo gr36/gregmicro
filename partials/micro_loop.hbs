@@ -1,0 +1,19 @@
+<div class="blog-post-card">
+            <div class="post-card-info">
+                <h2 class="blog-post-title"><a href="{{url}}">{{title}}</h2></a>
+                <div class="blog-post-meta">
+                <time datetime="{{date format="YYYY-MM-DD"}}">Posted on {{date published_at}}</time>
+                </div>
+                {{#if feature_image}}
+                <figure class="post-media hero-container">
+                        <img class="hero-image" srcset="{{> srcset}}"
+                            sizes="(min-width: 1170px) 1140px, (min-width: 780px) 750px, calc(100vw - 30px)"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+                </figure>
+                {{/if}}
+                <div class="post-content kg-canvas u-text-format">{{content}}</div>
+            </div>
+
+</div>
+<span class="separator"><span class="divider"></span></span>
