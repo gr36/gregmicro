@@ -1,6 +1,6 @@
 .post-feed {
     margin: -15px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s var(--animation-base);
 }
 

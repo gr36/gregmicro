@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="content-area">
     <main class="site-main container">
-        <div class="post-feed">
+        <div class="blog-feed">
             <div class="grid-item grid-sizer"></div>
             {{ if or .IsHome .Site.Params.paginate_categories }}
 	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
