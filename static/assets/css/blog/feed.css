@@ -96,10 +96,15 @@
 }
 
 
-.blog-post-meta {
+.blog-post-meta a {
     font-weight: 500;
     color: var(--highlight);
     margin-bottom: 10px;
+}
+
+.blog-post-meta a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
 }
 
 .link-post-meta {
