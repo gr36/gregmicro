@@ -6,17 +6,17 @@
         <div class="blog-feed">
             <div class="grid-item grid-sizer"></div>
             {{ if or .IsHome .Site.Params.paginate_categories }}
-	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
-	{{ $list := $paginator.Pages }}
-	{{ range $list  }}
-		{{ partial "blog_loop.html" . }}
-	{{ end }}
-{{ else }}
-	{{ $list := where .Data.Pages.ByDate.Reverse "Type" "post" }}
-	{{ range $list  }}
-		{{ partial "blog_loop.html" . }}
-	{{ end }}
-{{ end }}
+				{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
+				{{ $list := $paginator.Pages }}
+			{{ range $list  }}
+				{{ partial "blog_loop.html" . }}
+			{{ end }}
+			{{ else }}
+				{{ $list := where .Data.Pages.ByDate.Reverse "Type" "post" }}
+				{{ range $list  }}
+				{{ partial "blog_loop.html" . }}
+			{{ end }}
+			{{ end }}
         </div>
         {{ if .IsHome }}
 	{{ if .Site.Params.paginate_home }}
