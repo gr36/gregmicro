@@ -1,3 +1,7 @@
+.advert {
+  padding-bottom: 2rem;
+}
+
 #carbonads * {
   margin: initial;
   padding: initial;
@@ -70,4 +74,5 @@
   #carbonads .carbon-poweredby {
     color: var(--primary-text-color)
   }
+ 
 }

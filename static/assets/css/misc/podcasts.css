@@ -1,0 +1,108 @@
+.subscribe {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        background-color: var(--light-contrast);
+}
+
+.podcast-header {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.podcast-artwork {
+    width: 30%;
+}
+
+.podcast-artwork-img {
+    border-radius: 11px;
+    max-height: 200px;
+}
+
+.podcast-name {
+    width: 50%;
+}
+
+.podcast-name a {
+    color: var(--ghost-accent-color);
+    font-weight: 500;
+}
+
+.aya {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.subscribe-apps {
+    display: flex;
+    flex: 1 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+}
+
+.apple, .overcast, .pocketcasts, .spotify {
+    width: 25%;
+}
+
+.podcast-brand {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.app-logo-img {
+    border-radius: 11px;
+    max-width: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-plug {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .subscribe {
+        background-color: var(--dark-contrast);
+    }
+}
+
+@media (max-width: 660px) {
+    .aya {
+        font-size: 2rem;
+    }
+    .subscribe-apps {
+        margin-left: 0;
+        margin-right: 0;
+        flex-flow: row;
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    .podcast-brand {
+        text-size-adjust: -20%;
+    }
+    .podcast-artwork {
+        display: none;   
+    }
+    .podcast-name {
+        width: 100%;
+    }
+    .podcast-header {
+        margin-bottom: 1rem;
+    }
+}

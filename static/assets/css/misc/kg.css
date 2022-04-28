@@ -147,3 +147,9 @@
 .kg-width-full {
     grid-column: full-start/full-end;
 }
+
+@media (prefers-color-scheme: dark) {
+    .kg-bookmark-title {
+        color: var(--darkmode-text-color);
+    }
+}

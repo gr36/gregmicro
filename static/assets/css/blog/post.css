@@ -16,12 +16,12 @@
 }
 
 .back-to-blog a:hover { 
-    background-color: var(--highlight);
+    background-color: var(--ghost-accent-color);
     color: var(--darkmode-text-color);
 }
 
 .post-title {
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .post-excerpt {
@@ -64,7 +64,7 @@
 }
 
 .post-tag a:hover {
-    background-color: var(--highlight);
+    background-color: var(--ghost-accent-color);
     color: var(--darkmode-text-color);
 }
 
@@ -91,12 +91,13 @@
 }
 
 @media (max-width: 767px) {
-    .post-title {
-        font-size: 32px;
-    }
 
     .post-excerpt {
         font-size: 18px;
+    }
+
+    .post-title {
+        font-size: 3rem;
     }
 
     .post-media,

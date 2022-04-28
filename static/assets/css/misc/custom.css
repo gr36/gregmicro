@@ -1,0 +1,28 @@
+.custom_post {
+    display: flex;
+    gap: 2rem;
+}
+
+.custom_image {
+    width: 40%;
+}
+
+.custom_image_style {
+    border-radius: 11px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom_text {
+    width: 60%;
+}
+
+@media (max-width: 640px) {
+.custom_post {
+    flex-direction: column;
+}
+
+.custom_image, .custom_text {
+    width: 100%;
+}
+
+}

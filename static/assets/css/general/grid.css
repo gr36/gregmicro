@@ -6,6 +6,12 @@
     display: block;
 }
 
+.top-container {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
 .related-container, .hero-container {
     margin-right: auto;
     margin-left: auto;
