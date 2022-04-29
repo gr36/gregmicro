@@ -13,6 +13,7 @@
     --animation-base: ease-in-out;
     --light-contrast: #dee1e3;
     --dark-contrast:#2a2d30;
+    --ghost-accent-color: #FF1A75;
 }
 
 html {
