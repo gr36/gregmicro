@@ -12,13 +12,12 @@
 <meta name=”twitter:card” content=”summary” /> 
 
 
-<meta property="og:image" 
 {{ with .Params.images }}
     {{ range first 6 . }}
-        content="{{ . | absURL }}" />
+    <meta property="og:image" content="{{ . | absURL }}" />
     {{ end }}
     {{ else }}
-       content="https://gregmorris.co.uk/content/images/2022/01/Asset-1-1.png" />
+    <meta property="og:image" content="https://gregmorris.co.uk/content/images/2022/01/Asset-1-1.png" />
 {{ end }}
 
 {{ with .Params.audio }}
